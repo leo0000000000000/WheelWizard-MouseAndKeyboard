@@ -593,14 +593,14 @@ public sealed class RecompInstallService : IRecompInstallService
         if (!IsUsableFile(cachedSetupPath))
             return Fail("The downloaded WiiCompiled setup is missing or empty.");
 
-        /* if (!await SetupMatchesVersionAsync(cachedSetupPath, release.TagName, cancellationToken))
+        if (!await SetupMatchesVersionAsync(cachedSetupPath, release.TagName, cancellationToken))
         {
             var removed = DeleteInvalidSetup(cachedSetupPath);
             return removed
                 ? Fail($"The downloaded WiiCompiled setup did not report release {release.TagName}.")
                 : Fail($"The downloaded WiiCompiled setup did not report release {release.TagName} and could not be removed.");
         }
-*/
+
         PruneCachedSetupsExcept(cachedSetupPath);
         return Ok(cachedSetupPath);
     }
