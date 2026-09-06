@@ -13,7 +13,7 @@ public static class RecompReleaseResolver
     /// <summary>
     /// The owner of the recomp staging repository.
     /// </summary>
-    public const string RepositoryOwner = "patchzyy";
+    public const string RepositoryOwner = "leo0000000000000";
 
     /// <summary>
     /// The name of the recomp staging repository.
